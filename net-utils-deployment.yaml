@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: net-utils
+  name: net-utils
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: net-utils
+  template:
+    metadata:
+      labels:
+        app: net-utils
+    spec:
+      containers:
+        - image: index.docker.io/qqbuby/net-tools:1.0
+          name: net-utils
+          command: ["sleep", "24h"]
