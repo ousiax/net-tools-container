@@ -1,5 +1,17 @@
 A Simple and Stupid Network Utilities for Debugging Containers & Kubernetes.
 
+        curl \
+        iproute2 \
+        jq \
+        dnsutils \
+        netcat-openbsd \
+        net-tools \
+        nmap \
+        telnet \
+        tcpdump \
+        traceroute \
+        wget \
+
 You can use the pre-built image on https://hub.docker.com/r/qqbuby/net-tools[Docker Hub]. For example:
 
 * Kubernetes
