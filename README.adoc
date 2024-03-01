@@ -57,7 +57,7 @@ $ docker run --rm -it qqbuby/net-tools:2.0 ip a
        valid_lft forever preferred_lft forever
 ```
 
-Or build the image by yourself with the `Dockerfile` at this repository.
+Or build the image by yourself with the `Dockerfile` as below in this repository.
 
 ```Dockerfile
 FROM debian:bookworm
