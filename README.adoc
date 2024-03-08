@@ -17,7 +17,7 @@ You can use the pre-built image on https://hub.docker.com/r/qqbuby/net-tools[Doc
 * Kubernetes
 +
 ```console
-$ kubectl create -n default deployment net-tools --image docker.io/qqbuby/net-tools:2.0 -- sleep 24h
+$ kubectl create -n default deployment net-tools --image docker.io/qqbuby/net-tools:2.0 -- tail -f /dev/null
 deployment.apps/net-tools created
 $ kubectget po -n default -l app=net-tools
 NAME                         READY   STATUS    RESTARTS   AGE
