@@ -18,7 +18,7 @@ You can use the pre-built image on https://hub.docker.com/r/qqbuby/net-tools[Doc
 * Kubernetes
 +
 ```console
-$ kubectl create -n default deployment net-tools --image docker.io/qqbuby/net-tools:2.0 -- tail -f /dev/null
+$ kubectl create -n default deployment net-tools --image docker.io/qqbuby/net-tools -- tail -f /dev/null
 deployment.apps/net-tools created
 $ kubectget po -n default -l app=net-tools
 NAME                         READY   STATUS    RESTARTS   AGE
@@ -58,23 +58,4 @@ $ docker run --rm -it qqbuby/net-tools:2.0 ip a
        valid_lft forever preferred_lft forever
 ```
 
-Or build the image by yourself with the `Dockerfile` as below in this repository.
-
-```Dockerfile
-FROM debian:bookworm
-LABEL maintainer="Jon X <ousiax@hotmail.com>"
-RUN apt-get update \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-        curl \
-        iproute2 \
-        jq \
-        dnsutils \
-        netcat-openbsd \
-        net-tools \
-        nmap \
-        telnet \
-        tcpdump \
-        traceroute \
-        wget \
-    && rm -rf /var/lib/apt/lists/*
-```
+Or build the image by yourself with the `Dockerfile` in this repository.
