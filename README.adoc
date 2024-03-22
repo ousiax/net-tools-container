@@ -2,6 +2,7 @@ A Simple and Stupid Network Utilities for Debugging Containers & Kubernetes.
 
         curl \
         iproute2 \
+        iputils-ping \
         jq \
         dnsutils \
         netcat-openbsd \
