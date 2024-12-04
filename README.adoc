@@ -1,6 +1,7 @@
 A Simple and Stupid Network Utilities for Debugging Containers & Kubernetes.
 
         curl \
+        ethtool \
         iproute2 \
         iputils-ping \
         jq \
@@ -47,7 +48,7 @@ kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   15d
 * Docker
 +
 ```console
-$ docker run --rm -it qqbuby/net-tools:2.0 ip a
+$ docker run --rm -it qqbuby/net-tools ip a
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
     inet 127.0.0.1/8 scope host lo

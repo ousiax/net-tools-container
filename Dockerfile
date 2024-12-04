@@ -3,6 +3,7 @@ LABEL maintainer="Jon X <ousiax@hotmail.com>"
 RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         curl \
+        ethtool \
         iproute2 \
         iputils-ping \
         jq \
