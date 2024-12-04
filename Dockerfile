@@ -2,6 +2,7 @@ FROM debian:bookworm
 LABEL maintainer="Jon X <ousiax@hotmail.com>"
 RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+        bash-completion \
         curl \
         ethtool \
         iproute2 \
